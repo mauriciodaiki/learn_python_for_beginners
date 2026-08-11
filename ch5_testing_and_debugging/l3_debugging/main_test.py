@@ -1,23 +1,23 @@
-from main import total_xp
+from main import take_magic_damage
 
 run_cases = [
-    (1, 200, 300),
-    (2, 50, 250),
+    (100, 5, 2, 20, 65),
+    (200, 10, 1, 25, 185),
 ]
 
 submit_cases = run_cases + [
-    (0, 0, 0),
-    (0, 200, 200),
-    (176, 350, 17950),
-    (250, 100, 25100),
+    (0, 0, 0, 0, 0),
+    (1, 1, 1, 1, 1),
+    (100, 2, 3, 1, 99),
+    (2500, 3, 2, 2, 2499),
 ]
 
 
-def test(input1, input2, expected_output):
+def test(input1, input2, input3, input4, expected_output):
     print("---------------------------------")
-    print(f"Inputs: {input1}, {input2}")
+    print(f"Inputs: {input1}, {input2}, {input3}, {input4}")
+    result = take_magic_damage(input1, input2, input3, input4)
     print(f"Expected: {expected_output}")
-    result = total_xp(input1, input2)
     print(f"Actual:   {result}")
     if result == expected_output:
         print("Pass")
