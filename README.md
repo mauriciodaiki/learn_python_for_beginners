@@ -13,7 +13,7 @@ The course covers essential Python programming concepts required for building re
 - [x] **Ch 3.** Functions
 - [x] **Ch 4.** Scope
 - [x] **Ch 5.** Testing & Debugging
-- [ ] **Ch 6.** Computing
+- [x] **Ch 6.** Computing
 - [ ] **Ch 7.** Comparisons
 - [ ] **Ch 8.** Loops
 - [ ] **Ch 9.** Lists
