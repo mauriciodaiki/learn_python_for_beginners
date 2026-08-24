@@ -6,6 +6,7 @@ def check_defense(attack_strength, min_enchantment, max_enchantment):
 
         if enchantment_strength >= attack_strength:
             print("Attack blocked!")
+            break
 
 
 # Don't touch below this line
