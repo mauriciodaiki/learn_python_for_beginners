@@ -1,5 +1,5 @@
 def get_inventory():
-    return ["Healing Potion", "Leather Scraps", "Iron Helmet"]
+    return ["Healing Potion", "Leather Scraps", "Iron Helmet", "Shortsword"]
 
 
 # Don't edit below this line
