@@ -4,7 +4,7 @@
         {
             "label": "Boot.dev: Run",
             "type": "shell",
-            "command": "clear && \"${workspaceFolder}/.venv/bin/python\" -m pytest -q -s --tb=short --no-header -m \"not submit\" main_test.py",
+            "command": "clear && \"${workspaceFolder}/.venv/bin/python\" -m pytest -q -s --tb=no --no-header -m \"not submit\" main_test.py",
             "options": {
                 "cwd": "${fileDirname}"
             },
@@ -20,7 +20,7 @@
         {
             "label": "Boot.dev: Submit",
             "type": "shell",
-            "command": "clear && \"${workspaceFolder}/.venv/bin/python\" -m pytest -q -s --tb=short --no-header main_test.py",
+            "command": "clear && \"${workspaceFolder}/.venv/bin/python\" -m pytest -q -s --tb=no --no-header main_test.py",
             "options": {
                 "cwd": "${fileDirname}"
             },

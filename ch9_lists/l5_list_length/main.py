@@ -1,2 +1,2 @@
 def get_last_index(inventory):
-    pass
+    return len(inventory) - 1
