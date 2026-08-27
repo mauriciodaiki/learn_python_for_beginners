@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Boot.dev: Run",
+            "type": "shell",
+            "command": "clear && \"${workspaceFolder}/.venv/bin/python\" -m pytest -q -s --tb=short --no-header -m \"not submit\" main_test.py",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": false,
+                "showReuseMessage": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Boot.dev: Submit",
+            "type": "shell",
+            "command": "clear && \"${workspaceFolder}/.venv/bin/python\" -m pytest -q -s --tb=short --no-header main_test.py",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": false,
+                "showReuseMessage": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}
