@@ -18,7 +18,7 @@ The course covers essential Python programming concepts required for building re
 - [x] **Ch 8.** Loops
 - [x] **Ch 9.** Lists
 - [x] **Ch 10.** Dictionaries
-- [ ] **Ch 11.** Sets
+- [x] **Ch 11.** Sets
 - [ ] **Ch 12.** Errors
 - [ ] **Ch 13.** Type Hints
 - [ ] **Ch 14.** Practice
