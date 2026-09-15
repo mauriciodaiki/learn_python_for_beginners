@@ -34,3 +34,54 @@ To mirror the automated testing environment used by Boot.dev on my local machine
 - **Running Tests Locally:** Tests are run from the terminal using relative execution paths:
   ```bash
   python3 main_test.py
+
+---
+
+## Requirements
+
+- Python 3
+- VS Code
+- VS Code Python extension
+
+## Setup
+
+Clone the repository:
+
+    git clone <repository-url>
+    cd learn_python_for_beginners
+
+Create the virtual environment:
+
+    python3 -m venv .venv
+
+Install dependencies:
+
+    .venv/bin/python -m pip install -r requirements.txt
+
+## Running tests
+
+The repository provides two VS Code tasks:
+
+- `Boot.dev: Run` — runs the regular tests.
+- `Boot.dev: Submit` — runs all tests, including tests marked `submit`.
+
+They can also be selected from:
+
+    Terminal → Run Task...
+
+### Recommended VS Code shortcuts
+
+    Ctrl+Enter        → Boot.dev: Run
+    Ctrl+Shift+Enter  → Boot.dev: Submit
+
+These shortcuts must be configured in the user's VS Code
+`keybindings.json`.
+
+## Pytest markers
+
+Tests marked with:
+
+    @pytest.mark.submit
+
+are excluded from `Boot.dev: Run` and included in
+`Boot.dev: Submit`.
